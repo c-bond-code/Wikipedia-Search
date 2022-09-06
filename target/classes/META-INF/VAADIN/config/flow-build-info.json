@@ -1,0 +1,18 @@
+{
+  "productionMode": false,
+  "useDeprecatedV14Bootstrapping": false,
+  "eagerServerLoad": false,
+  "npmFolder": "/Users/clayton/Documents/GitHub/Wikipedia-Search",
+  "node.version": "v16.15.0",
+  "node.download.root": "https://nodejs.org/dist/",
+  "generatedFolder": "/Users/clayton/Documents/GitHub/Wikipedia-Search/target/frontend",
+  "frontendFolder": "/Users/clayton/Documents/GitHub/Wikipedia-Search/frontend",
+  "connect.javaSourceFolder": "/Users/clayton/Documents/GitHub/Wikipedia-Search/src/main/java",
+  "javaResourceFolder": "/Users/clayton/Documents/GitHub/Wikipedia-Search/src/main/resources",
+  "connect.applicationProperties": "/Users/clayton/Documents/GitHub/Wikipedia-Search/src/main/resources/application.properties",
+  "connect.openApiFile": "/Users/clayton/Documents/GitHub/Wikipedia-Search/target/generated-resources/openapi.json",
+  "project.frontend.generated": "/Users/clayton/Documents/GitHub/Wikipedia-Search/frontend/generated",
+  "pnpm.enable": false,
+  "require.home.node": false,
+  "build.folder": "target"
+}
