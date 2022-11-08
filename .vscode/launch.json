@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Application",
+      "request": "launch",
+      "mainClass": "com.example.application.Application",
+      "projectName": "myapp"
+    },
+    {
+      "type": "java",
       "name": "Launch tester",
       "request": "launch",
       "mainClass": "com.example.application.views.wikipediasearch.tester",

@@ -10,7 +10,7 @@ import { classMap } from 'lit/directives/class-map.js';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import { copy } from './copy-to-clipboard.js';
-import { licenseCheckFailed, licenseCheckNoKey, licenseCheckOk } from './License';
+import { licenseCheckFailed, licenseCheckNoKey, licenseCheckOk, licenseInit } from './License';
 var ConnectionStatus;
 (function (ConnectionStatus) {
     ConnectionStatus["ACTIVE"] = "active";
@@ -999,9 +999,10 @@ export class VaadinDevTools extends LitElement {
             window.sessionStorage.removeItem(VaadinDevTools.TRIGGERED_KEY_IN_SESSION_STORAGE);
         }
         this.transitionDuration = parseInt(window.getComputedStyle(this).getPropertyValue('--dev-tools-transition-duration'), 10);
-        if (window.Vaadin) {
-            window.Vaadin.devTools = this;
-        }
+        const windowAny = window;
+        windowAny.Vaadin = windowAny.Vaadin || {};
+        windowAny.Vaadin.devTools = Object.assign(this, windowAny.Vaadin.devTools);
+        licenseInit();
     }
     format(o) {
         return o.toString();

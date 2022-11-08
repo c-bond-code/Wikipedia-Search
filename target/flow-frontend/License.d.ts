@@ -11,3 +11,4 @@ export declare const findAll: (element: Element | ShadowRoot | Document, tags: s
 export declare const licenseCheckOk: (data: Product) => void;
 export declare const licenseCheckFailed: (data: ProductAndMessage) => void;
 export declare const licenseCheckNoKey: (data: ProductAndMessage) => void;
+export declare const licenseInit: () => void;
