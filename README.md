@@ -18,7 +18,7 @@ ready to be deployed. The file can be found in the `target` folder after the bui
 Once the JAR file is built, you can run it using
 `java -jar target/wikipediasearch-1.0-SNAPSHOT.jar`
 
-In the Wikipedia Search Build Folder add the newly created JAR file. Update the Docker file if needed for deployment. 
+In the Wikipedia Search Build Folder add the newly created JAR file. Update the Docker file if needed for deployment. Default name for the JAR is 'wikipediasearch'
 
 ## Project structure
 
